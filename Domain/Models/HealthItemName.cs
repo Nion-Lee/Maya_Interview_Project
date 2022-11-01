@@ -1,6 +1,6 @@
 ﻿namespace Domain.Models
 {
-    public class HealthItemName
+    public readonly ref struct HealthItemName
     {
         public const string bh = "bh";
         public const string bw = "bw";

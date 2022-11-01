@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ApplicationService
 {
-    public class CrudService : ICrudService
+    public sealed class CrudService : ICrudService
     {
         private readonly IDbContextFactory<AdventistContext> _contextFactory;
 
