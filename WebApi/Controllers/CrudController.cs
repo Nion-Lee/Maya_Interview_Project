@@ -16,12 +16,6 @@ namespace WebApi.Controllers
         }
 
         [HttpGet]
-        public string Test()
-        {
-            return "RRR";
-        }
-
-        [HttpGet]
         public async Task<IActionResult> Get(string feeNo, CancellationToken stoppingToken)
         {
             var item = await _crudService.Get(feeNo, stoppingToken);
